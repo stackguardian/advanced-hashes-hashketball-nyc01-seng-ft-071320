@@ -140,7 +140,8 @@ score = []
  end
  
 
-   
+   def shoe_size(player_name)
+     
  
 
 def team_names
