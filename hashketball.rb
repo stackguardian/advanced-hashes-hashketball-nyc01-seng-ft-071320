@@ -141,11 +141,14 @@ score = []
  
 
    def team_colors(team_name)
-     new_array = []
-     game_hash.each do |key,value|
+ game_hash.each do |key, value|
+   value.each do |inner_key, inner_value|
+     if inner_value == team 
+       return game_hash[key][:colors]
 end
    end
-   binding.pry
+ end
+ end
      
  
 
