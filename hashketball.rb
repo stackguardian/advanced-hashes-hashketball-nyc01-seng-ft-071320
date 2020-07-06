@@ -145,6 +145,7 @@ score = []
      game_hash.each do |key,value|
 end
    end
+   binding.pry
      
  
 
