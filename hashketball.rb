@@ -182,7 +182,7 @@ end
     game_hash.each do |key, value|
       value[:players].each do |stats|
         if stats[:player_name] == player_name
-          return stats[:number][:shoe][:points][:rebounds][:assists][:steals][:blocks][:slam_dunks]
+          return player
         end
       end
     end
