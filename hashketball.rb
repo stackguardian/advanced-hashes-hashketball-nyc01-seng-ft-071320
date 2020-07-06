@@ -181,7 +181,7 @@ end
     game_hash.each do |key, value|
       value[:players].each do |stats|
         if stats[:player_name] == player_name
-          return player_name
+          return stats
         end
       end
     end
