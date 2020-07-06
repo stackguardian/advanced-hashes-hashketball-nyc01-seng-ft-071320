@@ -169,7 +169,11 @@ def player_stat(player_name)
     key[:players].each do |player|
       if player[:player_name] == player_name
         return player.delete_if{|stat, value|
-        [:pl]
+        [:player_name].include?(stat)}
+      end
+    end
+  end
+end
    
   
 
