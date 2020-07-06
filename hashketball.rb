@@ -164,16 +164,6 @@ def player_numbers(team_name)
   new_array 
 end
 
-def player_stat(player_name)
-  game_hash.each do |home_away, key|
-    key[:players].each do |player|
-      if player[:player_name] == player_name
-        return [:player]
-      end
-    end
-  end
-end
-end
    
   
 
