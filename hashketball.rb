@@ -164,7 +164,7 @@ def player_numbers(team_name)
   new_array 
 end
 
-def player_stats(players_name)
+def player_stats
   game_hash.each do |key, value|
     value[:players].each do |player_name|
       if name == player_name[:player_name]
