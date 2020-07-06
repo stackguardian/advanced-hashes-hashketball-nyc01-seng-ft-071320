@@ -188,5 +188,14 @@ end
   end
   
 def big_shoe_rebounds
-  
+  shoe = 20
+  game_hash.each do |key, value|
+    value[:players].each do |big_shoe|
+      if big_shoe[:shoe] > 18 
+        return big_shoe[:rebounds]
+      end
+    end
+  end
+end
+      
   
