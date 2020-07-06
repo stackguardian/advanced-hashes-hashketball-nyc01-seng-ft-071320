@@ -134,20 +134,6 @@ def num_points_scored(player_name)
      binding.pry
 end
 end
- 
-
-def shoe_size(player_name)
-  player_size = 0 
-  game_hash.each do |team_info|
-    team_info[:players].each do |stats|
-      
-      if stats[player_name] == player 
-        player_size = stats[:shoe]
-end
-end
-end
-player_size
-end
   
    def team_colors(team_name)
  game_hash.each do |key, value|
@@ -159,8 +145,6 @@ end
  end
  end
      
- 
-
 def team_names
 team1 = game_hash[:home][:team_name] 
 team2 = game_hash[:away][:team_name]
@@ -179,5 +163,8 @@ def player_numbers(team_name)
     end 
   new_array 
 end
+
+def player_stats(player_name)
+  
 
   
