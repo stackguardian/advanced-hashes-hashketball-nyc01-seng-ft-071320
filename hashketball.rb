@@ -133,7 +133,7 @@ score = []
    game_hash.each do |key, value|
      if value[:player_name] == player_name
        value[:player_name].each do |player|
-         score << player[points]
+         score << player[:points]
     end
       end
   end
