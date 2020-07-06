@@ -178,11 +178,10 @@ def player_numbers(team_name)
 end
 
   def player_stats(player_name)
-    player_stat = {}
     game_hash.each do |key, value|
       value[:players].each do |stats|
         if stats[:player_name] == player_name
-          return player
+          return player_name
         end
       end
     end
