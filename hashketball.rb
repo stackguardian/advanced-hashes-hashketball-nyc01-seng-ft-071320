@@ -143,14 +143,7 @@ score = []
    def team_colors(team_name)
      new_array = []
      game_hash.each do |key,value|
-       if value[:team_names] == team_names
-         
-         value[:colors].each do |color|
-           new_array << color[:colors]
-         end
-       end
-     end
-     new_array
+end
    end
      
  
