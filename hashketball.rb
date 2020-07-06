@@ -131,13 +131,8 @@ end
 def num_points_scored(player_name)
 score = []
    game_hash.each do |key, value|
-     if value[:player_name] == player_name
-       value[:player_name].each do |player|
-         score << player[:points]
-    end
-      end
-  end
- end
+end
+end
  
 
    def team_colors(team_name)
